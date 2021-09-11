@@ -1,0 +1,71 @@
+@use '../util';
+
+.cards {
+  margin: 2rem 4rem;
+
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .card {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      height: 15em;
+      width: 22em;
+      margin: 1rem;
+
+      box-shadow: 0px 20px 50px 3px hsla(234, 12%, 34%, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+
+      &__line {
+        height: 0.3em;
+        width: 100%;
+      }
+
+      &__title {
+        color: var(--v-dark-blue);
+        margin: 2rem 2rem 1rem 2rem;
+      }
+
+      &__description {
+        color: var(--grayish-blue);
+        font-size: 0.8rem;
+        margin: 0rem 2rem;
+      }
+
+      &__photo {
+        position: absolute;
+        top: 10em;
+        left: 16em;
+      }
+
+      .cyan {
+        background-color: var(--cyan);
+      }
+
+      .red {
+        background-color: var(--red);
+      }
+
+      .orange {
+        background-color: var(--orange);
+      }
+
+      .blue {
+        background-color: var(--blue);
+      }
+
+      &:nth-child(2) {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
