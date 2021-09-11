@@ -24,5 +24,9 @@
     margin-top: util.rem(16);
     font-size: util.rem(14);
     text-align: center;
+
+    @include util.breakpoint-down(small) {
+      font-size: util.rem(13);
+    }
   }
 }
